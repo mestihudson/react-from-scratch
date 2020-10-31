@@ -7,7 +7,7 @@ services:
     volumes:
     - .:/ws
     ports:
-    - 50000:5000
+    - 5000:5000
     entrypoint: /bin/sh -c 'yarn install && yarn start; tail -f'
     environment:
       HOST: 0.0.0.0
