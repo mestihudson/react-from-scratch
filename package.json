@@ -25,7 +25,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
-    "start": "webpack serve",
+    "start": "webpack serve --host $HOST --port $PORT",
     "build": "webpack"
   }
 }
