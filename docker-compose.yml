@@ -9,3 +9,6 @@ services:
     ports:
     - 50000:5000
     entrypoint: /bin/sh -c 'tail -f'
+    environment:
+      HOST: 0.0.0.0
+      PORT: 5000
