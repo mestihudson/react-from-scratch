@@ -1,2 +1,11 @@
 version: '3.8'
 
+services:
+  app:
+    image: node:alpine
+    working_dir: /ws
+    volumes:
+    - .:/ws
+    ports:
+    - 50000:5000
+    entrypoint: /bin/sh -c 'tail -f'
